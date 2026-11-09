@@ -33,7 +33,7 @@ h1, h2 { font-family: Georgia, "Times New Roman", serif; font-weight: 400; lette
 h1 { font-size: clamp(3.5rem, 9vw, 6.5rem); margin-block: .8rem 1.2rem; }
 h1 em { color: var(--green); }
 .lede { max-width: 34ch; color: var(--muted); font-size: clamp(1rem, 2vw, 1.2rem); }
-.illustration { width: 100%; max-width: 16rem; color: var(--green); justify-self: end; }
+.portrait { display: block; width: 100%; max-width: 16rem; height: auto; border-radius: .75rem; justify-self: end; }
 
 .section { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); gap: 1rem 3rem; padding-block: clamp(2rem, 5vw, 3.5rem); border-top: 1px solid var(--line); }
 .section h2 { font-size: clamp(2.1rem, 5vw, 3.35rem); margin-top: .5rem; }
@@ -51,7 +51,7 @@ h1 em { color: var(--green); }
 @media (max-width: 640px) {
   .wrap { width: calc(100% - 2rem); }
   .intro { grid-template-columns: minmax(0, 1fr); gap: 1.2rem; }
-  .illustration { width: 7rem; justify-self: start; }
+  .portrait { width: min(12rem, 100%); justify-self: start; }
   .section { grid-template-columns: minmax(0, 1fr); gap: 1.5rem; }
   .milestones li { grid-template-columns: 3.7rem 1fr; }
 }
