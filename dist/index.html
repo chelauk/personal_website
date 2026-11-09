@@ -55,26 +55,32 @@
           <p>It started with molecular neurobiology using the model organism <em>C.elegans</em> looking for 
           novel neurotransmitter transporter proteins. Working with this organism I developed an interest in 
           developmental biology and went on to study the formation of teeth, I continued the theme of developmental
-          biology looking at early heart development. It was during my next role I discovered bioinformatics,
-          my supervisor handed me a external hard disk drive with exome sequencing data and asked me to deal
-          with it.  I spent the next few months converting my desktop PC to linux, learning the command line and 
-          the myriad tools required to align sequence data, call variants and annotate them.</p></li>
+          biology looking at early heart development. It was during my next role I developed my interest in bioinformatics.
+          We were working with unidentified causes of hyperinsulinaemic hypoglycaemia and my supervisor handed me an 
+          external hard disk drive with whole-exome sequencing data and asked me to work with it.  
+          I spent the next few months converting my desktop PC to linux, learning the command line and 
+          the myriad tools required to align sequence data, call variants and annotate them.  This lead to the 
+          identification of novel candidate genes.
+          </p></li>
         <li><h3>Data analyses</h3><p>As a bioinformatician my guiding principal is understanding the 
           science and having the flexibility to attempt new methods and present data in clear and interesting ways. 
           One example of this is my collaboration with Emanuele Azzoni and Marella de Bruijn in this paper: 
           <a href="https://www.sciencedirect.com/science/article/pii/S2211124721015977">onset of circulation 
-            triggers a metabolic switch required for endothelial to hematopoietic transition</a>. I 
-            processed the single-cell transcriptomic data and presented it in a <a href = "azzoni/azzoni.html">
+            triggers a metabolic switch required for endothelial to hematopoietic transition</a>. My goal was to 
+            process the single-cell transcriptomic data and present it in a <a href = "azzoni/azzoni.html">
             useable format </a></p></li>
         <li><h3>Data handling</h3><p>As well as data analyses I am charged with processing hundreds of samples
           so I developed a pipeline to process the data from raw sequencing reads to processed data. The files are
           stored in a logical structure and a database is used to track the samples, their metadata and the processing status.
-          For this I developed a simple json schema which is easy to access and update.
-        <li><h3>AI and agentic programming</h3><p>Artificial intelligence has offered a myriad of new methods of working and
+          It occured to me that a simple json schema which is easy to access and update would be a suitable solution for this 
+          scale of data handling.
+        <li><h3>AI, Machine learning and agentic programming</h3><p>Artificial intelligence has offered a myriad of new methods of working and
             I am very curious about exploiting it to improve our analyses.  One example I am pursuing is in quality control.  
           I routinely process thousands of samples and on the whole they pass QC.  Using agentic AI I have created a script 
         that surveys a multiqc output and picks out the outliers, only the selected outliers are submitted to the seqera or openai 
-        agents to speculate about the reasons why they may have failed.</p></li>
+        agents to speculate about the reasons why they may have failed.  Another project that interests me is using machine learning to rescue 
+        variant calls that have been rejected on the basis of quality by leveraging the hundreds of other samples that
+      have been processed the same way.</p></li>
       </ul>
     </section>
 
@@ -93,21 +99,23 @@
       </div>
       <!-- Replace the year and prompts with real milestones, newest first if you like. -->
       <ul class="entries milestones">
-        <li><span class="year">1999</span><div><h3>My PhD Project</h3><p>This was a speculative project searching for a novel protein that
-          may not have existed.  I used diverse techniques including molecular biology techniques including southern blotting and microinjection of 
+        <li><span class="year">1999</span><div><h3>My PhD Project</h3><p>This was a speculative project searching for a novel neurotransmitter protein. 
+          Diverse methodologies were employed including molecular biology techniques including southern blotting and microinjection of 
           constructs into the model organism <em>C.elegans</em>.
         </p></div></li>
         <li><span class="year">2002</span><div><h3>First PostDoc</h3><p>I published 
           <a href "https://anatomypubs.onlinelibrary.wiley.com/doi/full/10.1002/dvdy.10168">Tooth development is independent of a Hox patterning programme</a>
         This work was very interesting on the level of developmental biology and the role of the Hox genes and also technically challenging.</p></div></li>
-        <li><span class="year">2011</span><div><h3>Switch to bioinformatics</h3><p>Having been given sequencing data to deal with, I went through an intensive
+        <li><span class="year">2011</span><div><h3>Switch to bioinformatics</h3><p>While working with Khalid Hussain on hyperinsulinaemic hypoglycaemia, we took on 
+          the challenge of processing whole-exome sequencing data.  This required complete retraining, I went through an intensive
           period of self teaching in-order to understand the data and the tools required to process it.</p></div></li>
-        <li><span class="year">2021</span><div><h3>Cancer data analysis</h3><p>Having joined the <a href="https://sottorivalab.fht.org/">Sottoriva lab</a>, I introduced the nextflow pipeline system to their
+        <li><span class="year">2021</span><div><h3>Cancer data analysis</h3><p>During my time in the <a href="https://sottorivalab.fht.org/">Sottoriva lab</a>, in order 
+          to standardise and make their processing more efficient, I introduced the nextflow pipeline system to their
           data processing and analysis.
         </p></div></li>
         <li><span class="year">2026</span><div><h3><a href="https://humantechnopole.it/en/facilities/national-facility-for-data-handling-analysis/">National Facilities</a></h3><p>
           The Human Technopole National Facility for Data Handling and Analysis (NF-DHA) is a new facility that will provide the Italian scientific community with access to high-performance computing resources and expertise in data analysis. 
-          I am leading the development of the bioinformatics pipelines and data analysis workflows for the facility, which will support a wide range of research projects in genomics, transcriptomics, proteomics, and other omics fields.
+          I am currently lead development of the bioinformatics pipelines and data analysis workflows for the facility, which will support a wide range of research projects in genomics, transcriptomics, proteomics, and other omics fields.
         </p></div></li>
       </ul>
     </section>
