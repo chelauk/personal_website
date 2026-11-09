@@ -11,7 +11,6 @@
 <body>
   <a class="skip" href="#main">Skip to content</a>
   <header class="masthead wrap">
-    <a class="wordmark" href="#top"><span class="mark" aria-hidden="true">✳</span> My personal page</a>
     <nav aria-label="On this page">
       <a href="#work">Work</a>
       <a href="#achievements">Achievements</a>
@@ -23,14 +22,16 @@
     <section class="intro" id="top" aria-labelledby="intro-title">
       <div>
         <h1 id="intro-title"><em>Chela James.</em></h1>
-        <p class="lede">Work and interests</p>
+        <p class="lede">Senior Bioinformatician/Data Scientist at 
+          <a href="https://humantechnopole.it/en/people/chela-tandiwe-james/">Human Technopole</a></p>
       </div>
-      <img class="portrait" src="images/IMG_20260824_165118147_HDR.jpg" alt="Portrait of Chela James" width="1285" height="1715">
+      <img class="portrait" src="images/IMG_20260824_165118147_HDR.jpg" 
+        alt="Portrait of Chela James" width="321" height="423">
     </section>
 
     <section class="section" id="work" aria-labelledby="interests-title">
       <div class="section-heading">
-        <p class="eyebrow"><span aria-hidden="true">01 / </span>My work</p>
+        <p class="eyebrow"><span aria-hidden="true">01 / </span>Work</p>
         <h2 id="interests-title">Career development</h2>
       </div>
       <!-- Replace these sample prompts with your own interests. Add or remove list items as needed. -->
@@ -43,14 +44,22 @@
           my supervisor handed me a external hard disk drive with exome sequencing data and asked me to deal
           with it.  I spent the next few months converting my desktop PC to linux, learning the command line and 
           the myriad tools required to align sequence data, call variants and annotate them.</p></li>
-        <li><h3>Examples</h3><p>During my career as a bioinformatician my guiding principal is understanding the 
-          science and having the flexibility to attempt new methods and present data in clear and interesting ways
+        <li><h3>Data analyses</h3><p>During my career as a bioinformatician my guiding principal is understanding the 
+          science and having the flexibility to attempt new methods and present data in clear and interesting ways. 
           One example of this is my collaboration with Emanuele Azzoni and Marella de Bruijn in this paper: 
           <a href="https://www.sciencedirect.com/science/article/pii/S2211124721015977">onset of circulation 
             triggers a metabolic switch required for endothelial to hematopoietic transition</a>I presented
             processed the single-cell transcriptomic data and presented it in a <a href = "azzoni/azzoni.html">
             useable format </a></p></li>
-        <li><h3>[A topic I’m exploring]</h3><p>What are you learning about right now?</p></li>
+        <li><h3>Data handling</h3><p>As well as data analyses I am charged with processing hundreds of samples
+          so I developed a pipeline to process the data from raw sequencing reads to processed data. The files are
+          stored in a logical structure and a database is used to track the samples, their metadata and the processing status.
+          For this I developed a simple json schema which is easy to access and update.
+        <li><h3>AI and agentic programming</h3><p>Artificial intelligence has offered a myriad of new methods of working and
+            I am very curious about exploiting it to improve our analyses.  One example I am pursuing is in quality control.  
+          I routinely process thousands of samples and on the whole they pass QC.  Using agentic AI I have created a script 
+        that surveys a multiqc output and picks out the outliers, only the selected outliers are submitted to the seqera or openai 
+        agents to speculate about the reasons why they may have failed.</p></li>
       </ul>
     </section>
 
@@ -61,10 +70,38 @@
       </div>
       <!-- Replace the year and prompts with real milestones, newest first if you like. -->
       <ul class="entries milestones">
-        <li><span class="year">[Year]</span><div><h3>[A project I’m proud of]</h3><p>What did you do, and what came out of it?</p></div></li>
-        <li><span class="year">[Year]</span><div><h3>[A milestone I reached]</h3><p>What did you accomplish, and why did it matter to you?</p></div></li>
+        <li><span class="year">1999</span><div><h3>My PhD Project</h3><p>This was a speculative project searching for a novel protein that
+          may not have existed.  I used diverse techniques including molecular biology techniques including southern blotting and microinjection of 
+          constructs into the model organism <em>C.elegans</em>.
+        </p></div></li>
+        <li><span class="year">2002</span><div><h3>First PostDoc</h3><p>I published 
+          <a href "https://anatomypubs.onlinelibrary.wiley.com/doi/full/10.1002/dvdy.10168">Tooth development is independent of a Hox patterning programme</a>
+        This work was very interesting on the level of developmental biology and the role of the Hox genes and also technically challenging.</p></div></li>
+        <li><span class="year">2011</span><div><h3>Switch to bioinformatics</h3><p>Having been given sequencing data to deal with, I went through an intensive
+          period of self teaching in-order to understand the data and the tools required to process it.</p></div></li>
+        <li><span class="year">2021</span><div><h3>Cancer data analysis</h3><p>Having joined the Sottoriva lab, I introduced the nextflow pipeline system to their
+          data processing and analysis.
+        </p></div></li>
+        <li><span class="year">2026</span><div><h3><a href="https://humantechnopole.it/en/facilities/national-facility-for-data-handling-analysis/">National Facilities</a></h3><p>
+          The Human Technopole National Facility for Data Handling and Analysis (NF-DHA) is a new facility that will provide the Italian scientific community with access to high-performance computing resources and expertise in data analysis. 
+          I am leading the development of the bioinformatics pipelines and data analysis workflows for the facility, which will support a wide range of research projects in genomics, transcriptomics, proteomics, and other omics fields.
+        </p></div></li>
       </ul>
     </section>
+
+    <section class="section" id="hobbies" aria-labelledby="hobbies-title">
+      <div class="section-heading">
+        <p class="eyebrow"><span aria-hidden="true">03 / </span>hobbies</p>
+        <h2 id="achievements-title">Hobbies</h2>
+      </div>
+      <ul class="entries hobbies">
+        <li><div><h3>Languages</h3><p>
+          I have a passion for languages and have studied several over the years. I achieved a B2/C1 level in 
+          in Italian, and have a good command of Spanish. I enjoy learning new languages and exploring different cultures through language.
+        </p></div></li>
+      </ul>
+    </section>
+
   </main>
 
   <footer class="wrap footer">
