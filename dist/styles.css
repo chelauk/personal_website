@@ -40,11 +40,10 @@ h1 em { color: var(--green); }
 
 .section { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); gap: 1rem 3rem; padding-block: clamp(2rem, 5vw, 3.5rem); border-top: 1px solid var(--line); }
 .section h2 { font-size: clamp(2.1rem, 5vw, 3.35rem); margin-top: .5rem; }
-.work-figures { display: grid; gap: 2rem; margin-top: 2rem; }
-.work-figures figure { margin: 0; min-width: 0; }
-.work-figures figure > a { display: block; }
-.work-figures img { display: block; width: 100%; height: auto; border: 1px solid var(--line); border-radius: .5rem; }
-.work-figures figcaption { margin-top: .6rem; color: var(--muted); font-size: .82rem; line-height: 1.5; }
+.project-figure { margin: 0; min-width: 0; }
+.project-figure > a { display: block; }
+.project-figure img { display: block; width: 100%; height: auto; border: 1px solid var(--line); border-radius: .5rem; }
+.project-figure figcaption { margin-top: .6rem; color: var(--muted); font-size: .82rem; line-height: 1.5; }
 .entries { list-style: none; margin: 0; padding: 0; }
 .entries li { padding-block: .95rem; }
 .entries li:first-child { padding-top: 0; }
@@ -52,7 +51,12 @@ h1 em { color: var(--green); }
 .entries li + li { border-top: 1px solid var(--line); }
 .entries h3 { font-size: 1.05rem; font-weight: 700; }
 .entries p { margin-top: .2rem; color: var(--muted); }
-.milestones li { display: grid; grid-template-columns: 4.75rem 1fr; gap: .7rem; }
+#achievements > .section-heading { grid-column: 1; grid-row: 1; align-self: start; }
+.milestones { grid-column: 1 / -1; grid-row: 1; }
+.milestones li { display: grid; grid-template-columns: minmax(0, .8fr) 4.75rem minmax(0, 1.2fr); gap: .7rem 1.5rem; }
+.milestones .year { grid-column: 2; }
+.milestones li > div { grid-column: 3; }
+.project-figure { grid-column: 1; grid-row: 1; align-self: start; }
 .year { padding-top: .3rem; }
 .footer { border-top: 1px solid var(--line); padding-block: 1.5rem 2rem; color: var(--muted); }
 
@@ -61,5 +65,9 @@ h1 em { color: var(--green); }
   .intro { grid-template-columns: minmax(0, 1fr); gap: 1.2rem; }
   .portrait { width: min(12rem, 100%); justify-self: start; }
   .section { grid-template-columns: minmax(0, 1fr); gap: 1.5rem; }
-  .milestones li { grid-template-columns: 3.7rem 1fr; }
+  #achievements > .section-heading, .milestones { grid-row: auto; }
+  .milestones li { grid-template-columns: 3.7rem minmax(0, 1fr); gap: .7rem; }
+  .milestones .year { grid-column: 1; }
+  .milestones li > div { grid-column: 2; }
+  .project-figure { grid-column: 2; grid-row: 2; margin-top: .75rem; }
 }

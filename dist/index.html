@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Chela James' personal page">
   <meta name="theme-color" content="#f7f5ef">
-  <title>Work &amp; Achievements</title>
+  <title>Chela James</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -40,82 +40,82 @@
       <div class="section-heading">
         <p class="eyebrow"><span aria-hidden="true">01 / </span>Work</p>
         <h2 id="interests-title">Career development</h2>
-        <div class="work-figures">
-          <figure>
-            <a href="images/umap.png" aria-label="View the UMAP plot at full size">
-              <img src="images/umap.png" alt="UMAP plot with cells coloured by phenotype and distinguished by Ncx1 knockout or wild-type genotype" width="2304" height="1536" loading="lazy">
-            </a>
-            <figcaption>Single-cell data visualised with UMAP. <a href="azzoni/azzoni.html">Explore the analysis</a>.</figcaption>
-          </figure>
-        </div>
       </div>
       <!-- Replace these sample prompts with your own interests. Add or remove list items as needed. -->
       <ul class="entries">
         <li><h3>From molecular biology to bioinformatics</h3>
-          <p>It started with molecular neurobiology using the model organism <em>C.elegans</em> looking for 
-          novel neurotransmitter transporter proteins. Working with this organism I developed an interest in 
-          developmental biology and went on to study the formation of teeth, I continued the theme of developmental
-          biology looking at early heart development. It was during my next role I developed my interest in bioinformatics.
-          We were working with unidentified causes of hyperinsulinaemic hypoglycaemia and my supervisor handed me an 
-          external hard disk drive with whole-exome sequencing data and asked me to work with it.  
-          I spent the next few months converting my desktop PC to linux, learning the command line and 
-          the myriad tools required to align sequence data, call variants and annotate them.  This lead to the 
-          identification of novel candidate genes.
+          <p>Around 2011 I switched from molecular biology to bioinformatics, since completing my PhD for many years I had been a 
+            molecular biologist, up until that point all the computing I did was limited to microsoft windows. While working on a postdoc
+            on the genetic basis of hyperinsulinaemic hypoglycaemia my PI handed me 
+            an external hard disk drive with some patient whole-exome sequence data. I took on the challenge, converted my desktop PC 
+            to Linux and learned the command line and the myriad tools required to align sequence data, call variants and annotate them.  
+            This led to the identification of some candidate genes, and I was hooked.</p> 
+            <p>The next role I took on was as bioinformatician 
+            for GOSgene a team which processed genome sequences from clinical samples with the aim of identifying rare inherited disorders.
+            My knowledge of bioinformatics expanded to the use of high performance computing clusters, cloud computing and the use of workflow management systems.
           </p></li>
-        <li><h3>Data analyses</h3><p>As a bioinformatician my guiding principal is understanding the 
-          science and having the flexibility to attempt new methods and present data in clear and interesting ways. 
-          One example of this is my collaboration with Emanuele Azzoni and Marella de Bruijn in this paper: 
-          <a href="https://www.sciencedirect.com/science/article/pii/S2211124721015977">onset of circulation 
-            triggers a metabolic switch required for endothelial to hematopoietic transition</a>. My goal was to 
-            process the single-cell transcriptomic data and present it in a <a href = "azzoni/azzoni.html">
-            useable format </a></p></li>
-        <li><h3>Data handling</h3><p>As well as data analyses I am charged with processing hundreds of samples
-          so I developed a pipeline to process the data from raw sequencing reads to processed data. The files are
-          stored in a logical structure and a database is used to track the samples, their metadata and the processing status.
-          It occured to me that a simple json schema which is easy to access and update would be a suitable solution for this 
-          scale of data handling.
-        <li><h3>AI, Machine learning and agentic programming</h3><p>Artificial intelligence has offered a myriad of new methods of working and
-            I am very curious about exploiting it to improve our analyses.  One example I am pursuing is in quality control.  
-          I routinely process thousands of samples and on the whole they pass QC.  Using agentic AI I have created a script 
-        that surveys a multiqc output and picks out the outliers, only the selected outliers are submitted to the seqera or openai 
-        agents to speculate about the reasons why they may have failed.  Another project that interests me is using machine learning to rescue 
-        variant calls that have been rejected on the basis of quality by leveraging the hundreds of other samples that
-      have been processed the same way.</p></li>
       </ul>
     </section>
 
     <section class="section" id="achievements" aria-labelledby="achievements-title">
       <div class="section-heading">
         <p class="eyebrow"><span aria-hidden="true">02 / </span>Milestones</p>
-        <h2 id="achievements-title">Achievements</h2>
-        <div class="work-figures">
-          <figure>
+        <h2 id="achievements-title">Selected projects</h2>
+      </div>
+      <!-- Replace the year and prompts with real milestones, newest first if you like. -->
+      <ul class="entries milestones">
+        <li><span class="year">2026</span><div><h3>
+          <a href="https://humantechnopole.it/en/facilities/national-facility-for-data-handling-analysis/">Italian genomics</a></h3><p>
+          I currently work for The Human Technopole National Facility for Data Handling and Analysis (NF-DHA) which is a new facility 
+          that provides the Italian scientific community with access to high-performance computing resources and expertise in data analysis. 
+          I currently develop the bioinformatics pipelines and data analysis workflows for the facility, which 
+          supports a wide range of research projects in genomics, transcriptomics, proteomics, and other omics fields. What is exciting about this 
+          role is the diversity of the projects that I get to work on: Topics range from single-cell transcriptomics to population genomics, 
+          from the survival of baboon species to cancer genomics.
+          </p>
+          <h3>AI, Machine learning and agentic programming</h3> <p>  Artificial intelligence has offered a myriad of new methods of working and
+            I am very curious about exploiting it to improve our analyses.  One example of what I am pursuing is in quality control.  
+          I routinely process thousands of samples and on the whole they pass QC.  Having seqera or openai ai tools examine them all would be costly.
+          I have created a script that surveys a MultiQC output and picks out the outliers, only the selected outliers are then submitted to the seqera or openai 
+        agents to speculate about the reasons why they stand out.  Another project that interests me is using machine learning to rescue 
+        variant calls that have been rejected on the basis of quality by leveraging the hundreds of other samples that
+      have been processed the same way.
+        </p></div></li>
+        <li><span class="year">2019</span><div><h3>Lots of data</h3><p>During my time in the <a href="https://sottorivalab.fht.org/">Sottoriva lab</a>, in order 
+          to standardise and make their processing more efficient, I introduced the Nextflow pipeline system to their
+          data processing and analysis. As well as all the analyses, data needs organising, so one of my tasks was to ensure that the pipelines
+          output the files in a logical structure and a database is used to track the samples, their metadata and the processing status.
+          It occurred to me that a simple json schema which is easy to access and update would be a suitable solution for this 
+          scale of data handling.
+        </p></div></li>
+        <li class="has-figure">
+          <figure class="project-figure">
+            <a href="images/umap.png" aria-label="View the UMAP plot at full size">
+              <img src="images/umap.png" alt="UMAP plot with cells coloured by phenotype and distinguished by Ncx1 knockout or wild-type genotype" width="2304" height="1536" loading="lazy">
+            </a>
+            <figcaption>Single-cell data visualised with UMAP. <a href="https://chelauk.github.io/Lacaud_interview/html_sources/azzoni.html">Explore the analysis</a>.</figcaption>
+          </figure>
+          <span class="year">2016</span><div><h3>What happens when blood starts to flow?</h3><p>As a bioinformatician my guiding principle is understanding the 
+          science and having the flexibility to attempt new methods and present data in clear and interesting ways. 
+          One example of this is my collaboration with Emanuele Azzoni and Marella de Bruijn in this paper: 
+          <a href="https://www.sciencedirect.com/science/article/pii/S2211124721015977">onset of circulation 
+            triggers a metabolic switch required for endothelial to hematopoietic transition</a>. My goal was to 
+            process the single-cell transcriptomic data and present it in, for example, a <a href = "https://chelauk.github.io/Lacaud_interview/html_sources/azzoni.html">
+            useable notebook format </a></p></div></li>
+
+        <li><span class="year">2002</span><div><h3>First PostDoc</h3><p>I published 
+          <a href="https://anatomypubs.onlinelibrary.wiley.com/doi/full/10.1002/dvdy.10168">Tooth development is independent of a Hox patterning
+            programme</a> This work was very interesting on the level of developmental biology and the role of the Hox genes and also technically challenging.</p></div></li>
+        <li class="has-figure">
+          <figure class="project-figure">
             <a href="images/celegans.jpg" aria-label="View the C. elegans diagram at full size">
               <img src="images/celegans.jpg" alt="Diagram and microscopy image showing C. elegans anatomy and microinjection into the germline" width="474" height="433" loading="lazy">
             </a>
             <figcaption><em>C. elegans</em> anatomy and germline microinjection.</figcaption>
           </figure>
-        </div>
-      </div>
-      <!-- Replace the year and prompts with real milestones, newest first if you like. -->
-      <ul class="entries milestones">
-        <li><span class="year">1999</span><div><h3>My PhD Project</h3><p>This was a speculative project searching for a novel neurotransmitter protein. 
+          <span class="year">1999</span><div><h3>My PhD Project</h3><p>This was a speculative project searching for a novel neurotransmitter protein. 
           Diverse methodologies were employed including molecular biology techniques including southern blotting and microinjection of 
           constructs into the model organism <em>C.elegans</em>.
-        </p></div></li>
-        <li><span class="year">2002</span><div><h3>First PostDoc</h3><p>I published 
-          <a href "https://anatomypubs.onlinelibrary.wiley.com/doi/full/10.1002/dvdy.10168">Tooth development is independent of a Hox patterning programme</a>
-        This work was very interesting on the level of developmental biology and the role of the Hox genes and also technically challenging.</p></div></li>
-        <li><span class="year">2011</span><div><h3>Switch to bioinformatics</h3><p>While working with Khalid Hussain on hyperinsulinaemic hypoglycaemia, we took on 
-          the challenge of processing whole-exome sequencing data.  This required complete retraining, I went through an intensive
-          period of self teaching in-order to understand the data and the tools required to process it.</p></div></li>
-        <li><span class="year">2021</span><div><h3>Cancer data analysis</h3><p>During my time in the <a href="https://sottorivalab.fht.org/">Sottoriva lab</a>, in order 
-          to standardise and make their processing more efficient, I introduced the nextflow pipeline system to their
-          data processing and analysis.
-        </p></div></li>
-        <li><span class="year">2026</span><div><h3><a href="https://humantechnopole.it/en/facilities/national-facility-for-data-handling-analysis/">National Facilities</a></h3><p>
-          The Human Technopole National Facility for Data Handling and Analysis (NF-DHA) is a new facility that will provide the Italian scientific community with access to high-performance computing resources and expertise in data analysis. 
-          I am currently lead development of the bioinformatics pipelines and data analysis workflows for the facility, which will support a wide range of research projects in genomics, transcriptomics, proteomics, and other omics fields.
         </p></div></li>
       </ul>
     </section>
@@ -127,8 +127,9 @@
       </div>
       <ul class="entries hobbies">
         <li><div><h3>Languages</h3><p>
-          I have a passion for languages and have studied several over the years. I achieved a B2/C1 level in 
-          in Italian, and have a good command of Spanish. I enjoy learning new languages and exploring different cultures through language.
+          I have a passion for languages and have studied several over the years. Learning Italian gives me a window into the culture,
+          at lunchtime at work my colleagues can relax and chat in Italian and I can join in.  It also gives me
+          an opportunity to read books in their original language letting me appreciate some of the nuances that may be lost in translation.
         </p></div></li>
       </ul>
     </section>
